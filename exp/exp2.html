@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+
+    <h1>Color Robot</h1>
+    <h2>Click the button to hear what I have to say about your favorite color.</h2>
+
+    <button onclick= "colorFunction()">Click Me</button>
+
+
+
+    <p id="response"></p>
+    
+    <script>
+
+        function colorFunction() {
+            var text;
+            var favColor = prompt("What is your favorite color?");
+            switch (favColor) {
+                case "black":
+                    text = "Black is boring. See, you cant even see this text.";
+                    document.body.style.backgroundColor = "black";
+                    break;
+                case "red":
+                    text = "Fun fact! Red has historically been associated with sacrafice, danger, and courage due to its association with blood.";
+                    document.body.style.backgroundColor = "red";
+                    break;   
+                case "orange":
+                    text = "Let me guess...you are warm, optimistic, you love making new friends, and watching sunsets at the beach.";
+                    document.body.style.backgroundColor = "orange";
+                    break;
+                case "yellow":
+                    text = "They say that yellow is the color for happiness and love of learning. You must be happy and smart, lucky you! If not, may I suggest the color grey?";
+                    document.body.style.backgroundColor = "yellow";
+                    break;
+                case "green":
+                    text = "No way, mine too! Green is the color of nature, growth, life and consciosness... a truly elite color. ";
+                    document.body.style.backgroundColor = "green";
+                    break;
+                case "blue":
+                    text = "My second favorite color! Blue is the color for peace and harmony.";
+                    document.body.style.backgroundColor = "blue";
+                    break;
+                case "purple":
+                    text = "I bet you told people that your favorite color is purple and now it's part of your identity. Purple is the color for creativity, sensitivity and compassion.";
+                    document.body.style.backgroundColor = "purple";
+                    break;
+                case "grey":
+                    text = "Wow, even more boring than black.";
+                    document.body.style.backgroundColor = "grey";
+                    break;
+                case "white":
+                    text = "You like to be 'different' don't you?";
+                    document.body.style.backgroundColor = "white";
+                    break;
+                default:text = "No comment. Pick another one.";
+            }
+            document.getElementById("response").innerHTML = text;
+        }
+
+        // function lowercaseTranslation() {
+        //     var favColor = prompt("What is your favorite color?").toLowerCase;
+        // }
+        // prompt("Hello, what is your name?");
+        
+        // var strg = 'this is a sentence for this experiment';
+        // var arry = strg.split(" ");
+        
+        // for (var i = 0; i < arry.length; i++) {
+        //     arry[i] = arry[i].charAt(0).toUpperCase() + arry[i].slice(1);
+        // }
+
+        // var strg2 = arry.join(" ");
+        // console.log(strg2);
+
+    </script>
+
+</body>
+</html>
+
